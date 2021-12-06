@@ -48,7 +48,23 @@ table {
 }
 
 
-/* my */
+
+
+
+
+
+/* CONTAINER*/
+.container {
+    max-width: 1300px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+
+/* */
+
+
+
 
 .header {
     background-image: url("./img/main-background.jpg");
@@ -81,7 +97,7 @@ table {
 
 
  .flex-header {
-     padding: 0 20px;
+    padding: 0 20px;
 
     display: flex;
     flex-direction: row;
@@ -102,7 +118,9 @@ table {
 .main-logo {
     justify-self: center;
     text-decoration: none;
+
     color: white;
+
     font-size: 24px;
     font-family: 'Libre Baskerville', sans-serif;
     letter-spacing: 3px;
@@ -114,6 +132,7 @@ table {
 }
 .border-icon-zero {
     color: white;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -148,6 +167,7 @@ table {
 .main-block {
     height: 520px;
 
+    position: relative;
 }
 .header-block {
     display: grid;
@@ -163,8 +183,8 @@ table {
     justify-content: flex-end;
 
     position: absolute;
-    bottom: 5%;
     left: 20px;
+    bottom: 20%;
 }
 
 .main-block h1,
@@ -229,6 +249,8 @@ body {
     height: min-content;
 
     padding: 100px 40px 40px; 
+
+    border: 2px solid red;
 }
 .text-title {
     font-size: 32px;
@@ -251,6 +273,8 @@ body {
 
     align-self: flex-end;
     flex-grow: 1;
+
+    border: 2px solid red;
 }
 
 
@@ -261,7 +285,7 @@ body {
     justify-content: center;
 
     margin-bottom: 40px;
-
+    border: 2px solid red;
 }
 
 
@@ -297,6 +321,7 @@ body {
     font-weight: 500;
     color: gray;
 }
+
 
 
 .rollover-1 {
@@ -348,6 +373,8 @@ body {
     display: block;
     width: 380px;
     height: 400px;
+
+    border: 2px solid red;
 }
 .rollover-3:hover {
     background: url("./img/product-4.1.jpg");
@@ -364,10 +391,17 @@ body {
 
 .block-product-2 {
     padding-bottom: 75px;
+
+    border: 2px solid red;
 }
 
 .product-1-rollovers {
     margin-right: 15px;
+
+    border: 2px solid red;
+}
+.product-2-rollovers {
+    border: 2px solid red;
 }
 
 .rollovers-product {
@@ -446,20 +480,14 @@ body {
     background: url("./img/doggy-block.jpg") no-repeat;
     background-size: cover;
     min-height: 700px;
-    width: 100vw;
+    width: 100%;
 
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
+
+    border: 2px solid red;
 }
 
-.tag-featured {
-    border: 1px solid white;
-    border-radius: 10%;
-    max-width: max-content;
-}
-.tag-featured p {
-    color: white;
-}
 
 /* pulse */ 
 
@@ -476,6 +504,8 @@ body {
     left: 80px;
 
     width: max-content;
+
+    border: 2px solid red;
 }
 .featured-btn {
     position: relative;
@@ -485,6 +515,8 @@ body {
 
     width: 200px;
     height: 40px;
+
+    border: 2px solid red;
 }
 .featured-btn:hover {
     background-color: rgb(122, 156, 206);
@@ -493,22 +525,30 @@ body {
 
 
 /* slider */
+
+
+
+
 .slider-middle {
     background-color: #b3c7ae;
-    height: 800px;
+    height: 900px;
     text-align: center;
-    padding: 70px 70px;
 
+    border: 2px solid red;
   }
   .slider-title {
       font-size: 50px;
       font-family: 'Libre Baskerville', serif;
+
+      border: 2px solid red;
   }
   
   .slider {
     position: relative;
     width: min-content;
     margin: 50px;
+
+    border: 2px solid red;
   }
   
   .slider input[name="switch"] {
@@ -555,12 +595,15 @@ body {
     width: 200%;
     transition: all 0.5s;
 
+    border: 2px solid red;
   }
   
   .slides img {
     width: 600px;
     height: auto;
     float: left;
+
+    border: 2px solid red;
   }
   
   #btn1:checked~slider-inner slides {
@@ -573,6 +616,8 @@ body {
 
   .flex-slider-content {
       display: flex;
+
+      border: 2px solid red;
   }
 
   .about-me {
@@ -582,9 +627,12 @@ body {
     margin: 50px 0;
 
     text-align: center;
+
+    border: 2px solid red;
   }
   .about-me p {
 
+    border: 2px solid red;
     font-size: 24px;
     font-family: 'Libre Baskerville', serif;
   }
@@ -596,8 +644,16 @@ body {
  /* icon-logo */
 
  .icon-logo {
-     margin: 70px 20px;
+     margin-top: 70px;
+     margin-bottom: 70px;
      display: flex;
+
+     border: 2px solid red;
+ }
+ .icon-logo img {
+     width: 120px;
+
+     border: 2px solid red;
  }
 
 .il1,
@@ -612,12 +668,16 @@ body {
     text-align: center;
 
     margin: 60px 0;
+
+    border: 2px solid red;
 }
 
 .realanimal-block-1 {
     display: flex;
     flex-direction: column;
     width: 100vw;
+
+    border: 2px solid red;
 }
 .main-realanimal-pic {
     width: 700px;
@@ -625,15 +685,20 @@ body {
     display: block; 
     margin-left: auto; 
     margin-right: auto; 
+
+    border: 2px solid red;
 }
 .title-realanimal {
     font-size: 50px;
     font-family: 'Libre Baskerville', serif;
     margin: 20px 0;
+
+    border: 2px solid red;
 }
 .text-realanimal {
     font-size: 18px;
     font-family: 'Libre Baskerville', serif;
+    border: 2px solid red;
 }
 
 
@@ -646,15 +711,21 @@ body {
     
     margin: 0 auto;
     justify-content: space-between;
+
+    border: 2px solid red;
 }
 .block-pic-realdog {
     width: 300px;
     height: 300px;
     overflow: hidden;
+
+    border: 2px solid red;
 }
 .pic-dog {
     width: 300px;
     height: auto;
+
+    border: 2px solid red;
 }
 .dog-not-pic {
     background-color: rgb(189, 226, 189);
@@ -663,6 +734,8 @@ body {
 
     width: 300px;
     height: 300px;
+
+    border: 2px solid red;
 }
 .dog-not-pic p {
     position: absolute;
@@ -673,27 +746,36 @@ body {
 
     color: black;
     font-size: 18px;
+
+    border: 2px solid red;
 }
 .main-dog {
     width: 500px;
+
+    border: 2px solid red;
 }
 
 .realanimal-block-2 {
     display: flex;
     flex-direction: column;
     justify-content:space-between;
+    border: 2px solid red;
 }
 .realanimal-block-3 {
     display: flex;
     flex-direction: column;
     justify-content:space-between;
+
+    border: 2px solid red;
 }
 
 .btn-dogs {
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
-    padding: 20px 0 40px 0;
+
+
+    border: 2px solid red;
 }
 .real-dogs-btn {
     width: 400px;
@@ -703,12 +785,14 @@ body {
 
 /* footer */
 footer {
-    width: 100vw;
+    width: 100%;
     height: 350px;
+
+    border: 2px solid red;
 }
 
 .footer-blue {
-    width:100vw;
+
     height: 40px;
 
     text-align: center;
@@ -726,12 +810,11 @@ footer {
 }
 
 .main-footer {
-    width: 100vw;
-    height: 20em;
 
-    margin: 10px 0;
+    height: 100%;
 
-    display: flex;
+    margin: 0 auto;
+
     position: relative;
 
     border: 2px solid red;
@@ -752,8 +835,8 @@ footer {
     justify-content: center;
 
     position: absolute;
-    right: 3em;
-    top: 2em;
+    right: 20px;
+    top: 20px;
 }
 .falcon-toy p {
     font-size: 40px;
@@ -777,7 +860,7 @@ footer {
 
 
 .footer-block-1-1 {
-    width: 900px;
+    width: 800px;
     display: flex;
     justify-content: space-around;
 
