@@ -56,9 +56,8 @@ table {
     background-repeat: no-repeat;
     background-size: 100% auto;
     
-    width: 100vw;
+    max-width:100%;
     height: 100vh;
-
 }
 
 .main-header {
@@ -148,16 +147,24 @@ table {
 
 .main-block {
     height: 520px;
+
 }
 .header-block {
-
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
 
 .header-title {
-    padding-top: 160px;
-    padding-left: 50px;
+    height: max-content;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    position: absolute;
+    bottom: 5%;
+    left: 20px;
 }
 
 .main-block h1,
@@ -219,7 +226,7 @@ body {
     justify-content: center;
 
     width: auto;
-    height: 300px;
+    height: min-content;
 
     padding: 100px 40px 40px; 
 }
@@ -720,12 +727,14 @@ footer {
 
 .main-footer {
     width: 100vw;
-    height: auto;
+    height: 20em;
 
     margin: 10px 0;
 
     display: flex;
     position: relative;
+
+    border: 2px solid red;
 }
 
 
@@ -742,7 +751,9 @@ footer {
     display:flex;
     justify-content: center;
 
-    margin: 20px 40px;
+    position: absolute;
+    right: 3em;
+    top: 2em;
 }
 .falcon-toy p {
     font-size: 40px;
