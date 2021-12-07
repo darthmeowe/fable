@@ -74,6 +74,9 @@ table {
     
     max-width:100%;
     height: 100vh;
+
+    position: relative;
+    border: 2px solid rgb(0, 255, 13);
 }
 
 .main-header {
@@ -165,9 +168,9 @@ table {
 
 
 .main-block {
-    height: 520px;
+    height: 100%;
 
-    position: relative;
+    border: 2px solid rgb(76, 0, 255);
 }
 .header-block {
     display: grid;
@@ -175,16 +178,17 @@ table {
 }
 
 .header-title {
-    height: max-content;
-    min-height: 100vh;
-
+    height: calc(100% - 10%);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 
+    border: 2px solid rgb(128, 0, 0);
+
     position: absolute;
     left: 20px;
-    bottom: 20%;
+
+    margin-top: auto;
 }
 
 .main-block h1,
@@ -235,11 +239,12 @@ table {
 body {
     background-color: rgb(247, 247, 247);
 }
-.container {
-    width: 100vw;
+main {
+    width: 100%;
 }
 
 /* blockes */
+
 
 .block-1 {
     display: flex;
@@ -493,17 +498,22 @@ body {
 
 
 /* */
+.featured {
+    width: 100%;
+}
 
 .title-featured {
     font-family: 'Libre Baskerville', serif;
     font-size: 80px;
     color: white;
 
+    width: max-content;
+
     position: relative;
     top: 220px;
     left: 80px;
 
-    width: max-content;
+    
 
     border: 2px solid red;
 }
@@ -533,6 +543,7 @@ body {
     background-color: #b3c7ae;
     height: 900px;
     text-align: center;
+
 
     border: 2px solid red;
   }
@@ -616,6 +627,7 @@ body {
 
   .flex-slider-content {
       display: flex;
+      margin-top: 20px;
 
       border: 2px solid red;
   }
@@ -678,6 +690,7 @@ body {
     width: 100vw;
 
     border: 2px solid red;
+
 }
 .main-realanimal-pic {
     width: 700px;
@@ -837,6 +850,8 @@ footer {
     position: absolute;
     right: 20px;
     top: 20px;
+
+    border: 2px solid red;
 }
 .falcon-toy p {
     font-size: 40px;
@@ -872,10 +887,9 @@ footer {
     position: absolute;
     top: 90%;
     transform: translateY(-10%);
-    
 }
 .footer-block-1-2 p {
-    margin: 0 10px;
+    margin-right: 10px;
 }
 
 .column {
