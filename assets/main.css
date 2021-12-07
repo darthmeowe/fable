@@ -73,10 +73,10 @@ table {
     background-size: 100% auto;
     
     max-width:100%;
+    width: 100%;
     height: 100vh;
 
     position: relative;
-    border: 2px solid rgb(0, 255, 13);
 }
 
 .main-header {
@@ -170,7 +170,6 @@ table {
 .main-block {
     height: 100%;
 
-    border: 2px solid rgb(76, 0, 255);
 }
 .header-block {
     display: grid;
@@ -183,7 +182,6 @@ table {
     flex-direction: column;
     justify-content: flex-end;
 
-    border: 2px solid rgb(128, 0, 0);
 
     position: absolute;
     left: 20px;
@@ -255,7 +253,6 @@ main {
 
     padding: 100px 40px 40px; 
 
-    border: 2px solid red;
 }
 .text-title {
     font-size: 32px;
@@ -278,8 +275,6 @@ main {
 
     align-self: flex-end;
     flex-grow: 1;
-
-    border: 2px solid red;
 }
 
 
@@ -290,12 +285,14 @@ main {
     justify-content: center;
 
     margin-bottom: 40px;
-    border: 2px solid red;
+
 }
 
 
-#text-on-pic {
+.text-onpic {
     position: relative;
+
+    
 }
 .text-on-pic {
     position: absolute;
@@ -339,6 +336,9 @@ main {
     height: 400px;
 
     margin-right: 35px;
+
+    display: flex;
+    justify-self: center;
 }
 .rollover-1:hover {
     background: url("./img/product-2.1.jpg");
@@ -360,6 +360,9 @@ main {
     height: 400px;
 
     margin-right: 35px;
+
+    display: flex;
+    justify-self: center;
 }
 .rollover-2:hover {
     background: url("./img/product-3.1.jpg");
@@ -379,7 +382,9 @@ main {
     width: 380px;
     height: 400px;
 
-    border: 2px solid red;
+    display: flex;
+    justify-self: center;
+
 }
 .rollover-3:hover {
     background: url("./img/product-4.1.jpg");
@@ -397,16 +402,17 @@ main {
 .block-product-2 {
     padding-bottom: 75px;
 
-    border: 2px solid red;
 }
 
 .product-1-rollovers {
-    margin-right: 15px;
-
-    border: 2px solid red;
+    width: calc(100% / 2);
+    display: flex;
+    justify-self: center;
 }
 .product-2-rollovers {
-    border: 2px solid red;
+    width: calc(100% / 2);
+    display: flex;
+    justify-self: center;
 }
 
 .rollovers-product {
@@ -490,7 +496,6 @@ main {
     display: flex;
     flex-direction: column; 
 
-    border: 2px solid red;
 }
 
 
@@ -513,9 +518,6 @@ main {
     top: 220px;
     left: 80px;
 
-    
-
-    border: 2px solid red;
 }
 .featured-btn {
     position: relative;
@@ -526,7 +528,6 @@ main {
     width: 200px;
     height: 40px;
 
-    border: 2px solid red;
 }
 .featured-btn:hover {
     background-color: rgb(122, 156, 206);
@@ -544,14 +545,11 @@ main {
     height: 900px;
     text-align: center;
 
-
-    border: 2px solid red;
   }
   .slider-title {
       font-size: 50px;
       font-family: 'Libre Baskerville', serif;
 
-      border: 2px solid red;
   }
   
   .slider {
@@ -559,7 +557,6 @@ main {
     width: min-content;
     margin: 50px;
 
-    border: 2px solid red;
   }
   
   .slider input[name="switch"] {
@@ -606,7 +603,6 @@ main {
     width: 200%;
     transition: all 0.5s;
 
-    border: 2px solid red;
   }
   
   .slides img {
@@ -614,7 +610,6 @@ main {
     height: auto;
     float: left;
 
-    border: 2px solid red;
   }
   
   #btn1:checked~slider-inner slides {
@@ -629,7 +624,6 @@ main {
       display: flex;
       margin-top: 20px;
 
-      border: 2px solid red;
   }
 
   .about-me {
@@ -640,11 +634,8 @@ main {
 
     text-align: center;
 
-    border: 2px solid red;
   }
   .about-me p {
-
-    border: 2px solid red;
     font-size: 24px;
     font-family: 'Libre Baskerville', serif;
   }
@@ -660,12 +651,10 @@ main {
      margin-bottom: 70px;
      display: flex;
 
-     border: 2px solid red;
  }
  .icon-logo img {
      width: 120px;
 
-     border: 2px solid red;
  }
 
 .il1,
@@ -681,16 +670,12 @@ main {
 
     margin: 60px 0;
 
-    border: 2px solid red;
 }
 
 .realanimal-block-1 {
     display: flex;
     flex-direction: column;
     width: 100vw;
-
-    border: 2px solid red;
-
 }
 .main-realanimal-pic {
     width: 700px;
@@ -698,20 +683,16 @@ main {
     display: block; 
     margin-left: auto; 
     margin-right: auto; 
-
-    border: 2px solid red;
 }
 .title-realanimal {
     font-size: 50px;
     font-family: 'Libre Baskerville', serif;
     margin: 20px 0;
 
-    border: 2px solid red;
 }
 .text-realanimal {
     font-size: 18px;
     font-family: 'Libre Baskerville', serif;
-    border: 2px solid red;
 }
 
 
@@ -724,21 +705,15 @@ main {
     
     margin: 0 auto;
     justify-content: space-between;
-
-    border: 2px solid red;
 }
 .block-pic-realdog {
     width: 300px;
     height: 300px;
     overflow: hidden;
-
-    border: 2px solid red;
 }
 .pic-dog {
     width: 300px;
     height: auto;
-
-    border: 2px solid red;
 }
 .dog-not-pic {
     background-color: rgb(189, 226, 189);
@@ -747,8 +722,6 @@ main {
 
     width: 300px;
     height: 300px;
-
-    border: 2px solid red;
 }
 .dog-not-pic p {
     position: absolute;
@@ -759,36 +732,26 @@ main {
 
     color: black;
     font-size: 18px;
-
-    border: 2px solid red;
 }
 .main-dog {
     width: 500px;
-
-    border: 2px solid red;
 }
 
 .realanimal-block-2 {
     display: flex;
     flex-direction: column;
     justify-content:space-between;
-    border: 2px solid red;
 }
 .realanimal-block-3 {
     display: flex;
     flex-direction: column;
     justify-content:space-between;
-
-    border: 2px solid red;
 }
 
 .btn-dogs {
-    width: 100%;
+    width: calc(100% - 10px);
     display: flex;
     justify-content: center;
-
-
-    border: 2px solid red;
 }
 .real-dogs-btn {
     width: 400px;
@@ -798,10 +761,8 @@ main {
 
 /* footer */
 footer {
-    width: 100%;
+    width: calc(100% - 10px);
     height: 350px;
-
-    border: 2px solid red;
 }
 
 .footer-blue {
@@ -824,13 +785,11 @@ footer {
 
 .main-footer {
 
-    height: 100%;
+    height: 80%;
 
     margin: 0 auto;
 
     position: relative;
-
-    border: 2px solid red;
 }
 
 
@@ -850,8 +809,6 @@ footer {
     position: absolute;
     right: 20px;
     top: 20px;
-
-    border: 2px solid red;
 }
 .falcon-toy p {
     font-size: 40px;
